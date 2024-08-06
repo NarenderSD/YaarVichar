@@ -10,6 +10,7 @@ import CreatePost from './CreatePost'
 import { setPosts, setSelectedPost } from '@/redux/postSlice'
 import { Popover, PopoverContent, PopoverTrigger } from './ui/popover'
 import { Button } from './ui/button'
+import logo from '../assets/logo.png';
 
 const LeftSidebar = () => {
     const navigate = useNavigate();
@@ -69,6 +70,7 @@ const LeftSidebar = () => {
     return (
         <div className='fixed top-0 z-10 left-0 px-4 border-r border-gray-300 w-[16%] h-screen'>
             <div className='flex flex-col'>
+                 <img src={logo} alt="YaarVichar" className='my-8 pl-3 w-24 h-auto' />
                 <h1 className='my-8 pl-3 font-bold text-xl'>YaarVichar</h1>
                 <div>
                     {
